@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>안재윤 | Backend Developer Portfolio</title>
+  <meta name="description" content="안재윤 - 예외 없는 설계를 추구하는 백엔드 개발자 포트폴리오">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">AJY<span class="accent">.</span></a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-decoration">
+      <div class="hero-glow hero-glow--1"></div>
+      <div class="hero-glow hero-glow--2"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="hero-greeting animate-on-scroll">안녕하세요, 저는</p>
+      <h1 class="hero-name animate-on-scroll">안재윤<span class="accent">.</span></h1>
+      <div class="hero-typing-wrapper animate-on-scroll">
+        <span class="hero-typing" id="typing-text"></span>
+        <span class="typing-cursor">|</span>
+      </div>
+      <p class="hero-description animate-on-scroll">
+        메카트로닉스 엔지니어링의 인터록 설계 철학을<br>
+        소프트웨어 아키텍처에 녹여내는 개발자입니다.
+      </p>
+      <div class="hero-cta animate-on-scroll">
+        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+        <a href="#contact" class="btn btn-outline">연락하기</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="아래로 스크롤">
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text animate-on-scroll">
+          <p>
+            삼육대학교 메카트로닉스공학과에서 시스템 안전 설계를 공부하며,
+            <strong class="highlight">예외 상황을 허용하지 않는 인터록(Interlock) 설계</strong>의 중요성을 배웠습니다.
+          </p>
+          <p>
+            이 경험은 자연스럽게 소프트웨어 개발로 이어졌습니다.
+            하드웨어에서 배운 '안전한 시스템 설계' 철학을
+            <strong class="highlight">데이터 정합성과 트랜잭션 설계</strong>에 적용하고 있습니다.
+          </p>
+          <p>
+            KH정보교육원에서 풀스택 웹 개발을 수료한 후,
+            꾸준히 Java, Spring Boot, React 등을 학습하며
+            실무 역량을 쌓아가고 있습니다.
+          </p>
+        </div>
+        <div class="about-keywords animate-on-scroll">
+          <div class="keyword-card">
+            <div class="keyword-icon">&#9881;</div>
+            <h3>시스템 설계</h3>
+            <p>인터록 개념 기반의 안전한 아키텍처 설계</p>
+          </div>
+          <div class="keyword-card">
+            <div class="keyword-icon">&#128274;</div>
+            <h3>데이터 정합성</h3>
+            <p>유령 테이블, 원자적 트랜잭션으로 데이터 무결성 보장</p>
+          </div>
+          <div class="keyword-card">
+            <div class="keyword-icon">&#129504;</div>
+            <h3>논리적 사고</h3>
+            <p>문제를 구조화하고 예외 없는 로직을 설계</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category animate-on-scroll">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">&#9881;</span> Backend
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Spring</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">JSP</span>
+          </div>
+        </div>
+        <div class="skill-category animate-on-scroll">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">&#127912;</span> Frontend
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">AJAX</span>
+            <span class="skill-tag skill-tag--learning">React (학습중)</span>
+          </div>
+        </div>
+        <div class="skill-category animate-on-scroll">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">&#128451;</span> Database
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Oracle</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">DB 설계</span>
+          </div>
+        </div>
+        <div class="skill-category animate-on-scroll">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">&#9729;</span> DevOps
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--learning">Docker (학습중)</span>
+            <span class="skill-tag skill-tag--learning">AWS (학습중)</span>
+          </div>
+        </div>
+        <div class="skill-category animate-on-scroll">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">&#128736;</span> Tools
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">IntelliJ</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card animate-on-scroll" data-project="camping">
+          <div class="project-card-header">
+            <span class="project-label">Team Project</span>
+            <span class="project-period">2023 하반기 &middot; ~1.5개월</span>
+          </div>
+          <h3 class="project-title">캠핑장 예약 플랫폼</h3>
+          <p class="project-summary">
+            유령 테이블 구조 설계로 데이터 정합성 100%를 달성한
+            캠핑장 예약 및 렌탈 서비스 플랫폼
+          </p>
+          <div class="project-tech">
+            <span>Java</span>
+            <span>Spring</span>
+            <span>Oracle</span>
+            <span>JSP</span>
+            <span>AJAX</span>
+          </div>
+          <button class="project-detail-btn" data-modal="modal-camping">
+            자세히 보기 &rarr;
+          </button>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card animate-on-scroll" data-project="travel">
+          <div class="project-card-header">
+            <span class="project-label">Semi Project</span>
+            <span class="project-period">KH정보교육원</span>
+          </div>
+          <h3 class="project-title">여행지 소개 플랫폼</h3>
+          <p class="project-summary">
+            AJAX 비동기 통신 기반의 지역별 커뮤니티 전환과
+            사용자 경험 중심의 데이터 유실 방지 설계
+          </p>
+          <div class="project-tech">
+            <span>Java</span>
+            <span>JSP</span>
+            <span>AJAX</span>
+            <span>Oracle</span>
+          </div>
+          <button class="project-detail-btn" data-modal="modal-travel">
+            자세히 보기 &rarr;
+          </button>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card animate-on-scroll" data-project="food">
+          <div class="project-card-header">
+            <span class="project-label">Personal &middot; Vibe Coding</span>
+          </div>
+          <h3 class="project-title">오늘 저녁 뭐 먹지?</h3>
+          <p class="project-summary">
+            슬롯머신 랜덤 추천과 AI 표정 인식 기반
+            메뉴 추천 서비스. 62가지 메뉴, 5가지 카테고리 지원.
+          </p>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>CSS3</span>
+            <span>Teachable Machine</span>
+          </div>
+          <div class="project-links">
+            <a href="https://product-builder-lecture-2g1.pages.dev/" target="_blank" rel="noopener noreferrer" class="project-live-link">
+              &#127760; 라이브 데모
+            </a>
+          </div>
+          <button class="project-detail-btn" data-modal="modal-food">
+            자세히 보기 &rarr;
+          </button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modals -->
+  <div class="modal-overlay" id="modal-camping">
+    <div class="modal">
+      <button class="modal-close" aria-label="닫기">&times;</button>
+      <span class="project-label">Team Project</span>
+      <h3 class="modal-title">캠핑장 예약 플랫폼</h3>
+      <div class="modal-meta">
+        <span>&#128197; 2023 하반기 (~1.5개월)</span>
+        <span>&#128101; 팀 프로젝트</span>
+      </div>
+      <div class="modal-body">
+        <h4>담당 역할</h4>
+        <ul>
+          <li>캠핑장 CRUD 기능 개발</li>
+          <li>렌탈 상품 CRUD 기능 개발</li>
+          <li>DB 총괄 설계 및 관리</li>
+        </ul>
+        <h4>핵심 성과</h4>
+        <ul>
+          <li><strong>유령 테이블 구조 설계</strong>로 데이터 정합성 100% 달성</li>
+          <li>메카트로닉스의 인터록 설계 개념을 소프트웨어에 이식</li>
+          <li>원자적 트랜잭션 로직으로 예외 상황을 원천 차단</li>
+          <li>삭제 시 데이터 유실 방지를 위한 논리적 삭제(soft delete) 적용</li>
+        </ul>
+        <h4>기술 스택</h4>
+        <div class="project-tech">
+          <span>Java</span>
+          <span>Spring</span>
+          <span>Oracle</span>
+          <span>JSP</span>
+          <span>AJAX</span>
+          <span>MyBatis</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-travel">
+    <div class="modal">
+      <button class="modal-close" aria-label="닫기">&times;</button>
+      <span class="project-label">Semi Project</span>
+      <h3 class="modal-title">여행지 소개 플랫폼</h3>
+      <div class="modal-meta">
+        <span>&#128197; KH정보교육원 세미 프로젝트</span>
+        <span>&#128101; 팀 프로젝트</span>
+      </div>
+      <div class="modal-body">
+        <h4>담당 역할</h4>
+        <ul>
+          <li>커뮤니티 기능 전체 개발</li>
+          <li>댓글 modal 기능 구현</li>
+          <li>지역별 커뮤니티 전환 기능</li>
+        </ul>
+        <h4>핵심 성과</h4>
+        <ul>
+          <li><strong>AJAX 비동기 통신</strong>으로 새로고침 없는 지역별 커뮤니티 전환 구현</li>
+          <li>사용자 경험 중심 설계 — 작성 중 데이터 유실 방지</li>
+          <li>Modal 기반의 직관적인 댓글 UI 설계</li>
+        </ul>
+        <h4>기술 스택</h4>
+        <div class="project-tech">
+          <span>Java</span>
+          <span>JSP</span>
+          <span>AJAX</span>
+          <span>Oracle</span>
+          <span>CSS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-food">
+    <div class="modal">
+      <button class="modal-close" aria-label="닫기">&times;</button>
+      <span class="project-label">Personal &middot; Vibe Coding</span>
+      <h3 class="modal-title">오늘 저녁 뭐 먹지?</h3>
+      <div class="modal-meta">
+        <span>&#127760; 개인 프로젝트 (AI 활용 바이브 코딩)</span>
+      </div>
+      <div class="modal-body">
+        <h4>주요 기능</h4>
+        <ul>
+          <li>슬롯머신 방식의 랜덤 메뉴 추천</li>
+          <li>AI 표정 인식 기반 기분별 메뉴 추천 (Google Teachable Machine)</li>
+          <li>62가지 메뉴 DB, 5가지 카테고리 (한식, 중식, 일식, 양식, 분식)</li>
+          <li>다크/라이트 테마 지원</li>
+        </ul>
+        <h4>기술 스택</h4>
+        <div class="project-tech">
+          <span>JavaScript</span>
+          <span>CSS3</span>
+          <span>Google Teachable Machine</span>
+          <span>HTML5</span>
+        </div>
+        <div class="modal-link">
+          <a href="https://product-builder-lecture-2g1.pages.dev/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            &#127760; 라이브 데모 보기
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Education Section -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Education & Training</h2>
+      <div class="timeline">
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2014.03 - 2018.03</span>
+            <h3>삼육대학교</h3>
+            <p>메카트로닉스공학과</p>
+            <p class="timeline-detail">시스템 안전 설계, 인터록 설계 개념 학습</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023.07 - 2023.12</span>
+            <h3>KH정보교육원</h3>
+            <p>공공데이터 융합 웹 애플리케이션 개발자 양성과정</p>
+            <p class="timeline-detail">Java, Spring, Oracle, JSP 기반 풀스택 웹 개발 수료</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">지속 학습 중</span>
+            <h3>자기주도 학습</h3>
+            <p>인프런 — Java, React, Spring Boot, Docker, AWS</p>
+            <p class="timeline-detail">프로그래머스 코딩 테스트 주 5회 이상, Lv.1~3 풀이</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Contact</h2>
+      <p class="contact-subtitle animate-on-scroll">
+        함께 일할 기회를 기다리고 있습니다.<br>
+        언제든 편하게 연락 주세요.
+      </p>
+      <div class="contact-grid animate-on-scroll">
+        <a href="mailto:vnm1994wodbs@gmail.com" class="contact-card">
+          <div class="contact-icon">&#9993;</div>
+          <h3>Email</h3>
+          <p>vnm1994wodbs@gmail.com</p>
+        </a>
+        <a href="https://github.com/vnm1994wodbs" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </div>
+          <h3>GitHub</h3>
+          <p>github.com/vnm1994wodbs</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 안재윤. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
