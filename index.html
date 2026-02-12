@@ -79,20 +79,23 @@
           </p>
         </div>
         <div class="about-keywords animate-on-scroll">
-          <div class="keyword-card">
+          <div class="keyword-card keyword-card--clickable" data-modal="modal-about-system">
             <div class="keyword-icon">&#9881;</div>
             <h3>시스템 설계</h3>
             <p>인터록 개념 기반의 안전한 아키텍처 설계</p>
+            <span class="keyword-more">자세히 보기 &rarr;</span>
           </div>
-          <div class="keyword-card">
+          <div class="keyword-card keyword-card--clickable" data-modal="modal-about-data">
             <div class="keyword-icon">&#128274;</div>
             <h3>데이터 정합성</h3>
             <p>유령 테이블, 원자적 트랜잭션으로 데이터 무결성 보장</p>
+            <span class="keyword-more">자세히 보기 &rarr;</span>
           </div>
-          <div class="keyword-card">
+          <div class="keyword-card keyword-card--clickable" data-modal="modal-about-logic">
             <div class="keyword-icon">&#129504;</div>
             <h3>논리적 사고</h3>
             <p>문제를 구조화하고 예외 없는 로직을 설계</p>
+            <span class="keyword-more">자세히 보기 &rarr;</span>
           </div>
         </div>
       </div>
@@ -135,6 +138,8 @@
             <span class="skill-tag">Oracle</span>
             <span class="skill-tag">MySQL</span>
             <span class="skill-tag">DB 설계</span>
+            <span class="skill-tag">Google Analytics</span>
+            <span class="skill-tag">Microsoft Clarity</span>
           </div>
         </div>
         <div class="skill-category animate-on-scroll">
@@ -144,6 +149,7 @@
           <div class="skill-tags">
             <span class="skill-tag skill-tag--learning">Docker (학습중)</span>
             <span class="skill-tag skill-tag--learning">AWS (학습중)</span>
+            <span class="skill-tag">Cloudflare</span>
           </div>
         </div>
         <div class="skill-category animate-on-scroll">
@@ -153,8 +159,19 @@
           <div class="skill-tags">
             <span class="skill-tag">Git</span>
             <span class="skill-tag">GitHub</span>
-            <span class="skill-tag">IntelliJ</span>
             <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Firebase Studio</span>
+          </div>
+        </div>
+        <div class="skill-category animate-on-scroll">
+          <h3 class="skill-category-title">
+            <span class="skill-icon">&#129302;</span> AI / Vibe Coding
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Claude Code</span>
+            <span class="skill-tag">Vibe Coding</span>
+            <span class="skill-tag">Teachable Machine</span>
           </div>
         </div>
       </div>
@@ -180,10 +197,19 @@
           </p>
           <div class="project-tech">
             <span>Java</span>
-            <span>Spring</span>
+            <span>Spring Boot</span>
             <span>Oracle</span>
             <span>JSP</span>
             <span>AJAX</span>
+            <span>AWS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://www.notion.so/CAMPLEX-Project-1dcd93df403580a599f2da99b98f19c9" target="_blank" rel="noopener noreferrer" class="project-live-link">
+              &#128214; Notion 문서
+            </a>
+            <a href="https://github.com/kdhleppa/finalProject" target="_blank" rel="noopener noreferrer" class="project-live-link">
+              &#128187; GitHub
+            </a>
           </div>
           <button class="project-detail-btn" data-modal="modal-camping">
             자세히 보기 &rarr;
@@ -206,6 +232,11 @@
             <span>JSP</span>
             <span>AJAX</span>
             <span>Oracle</span>
+          </div>
+          <div class="project-links">
+            <a href="https://www.notion.so/LAGC-Project-1bdd93df40358096abdcf44a5645d706" target="_blank" rel="noopener noreferrer" class="project-live-link">
+              &#128214; Notion 문서
+            </a>
           </div>
           <button class="project-detail-btn" data-modal="modal-travel">
             자세히 보기 &rarr;
@@ -267,11 +298,20 @@
         <h4>기술 스택</h4>
         <div class="project-tech">
           <span>Java</span>
-          <span>Spring</span>
+          <span>Spring Boot</span>
           <span>Oracle</span>
           <span>JSP</span>
           <span>AJAX</span>
           <span>MyBatis</span>
+          <span>AWS</span>
+        </div>
+        <div class="modal-link" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="https://www.notion.so/CAMPLEX-Project-1dcd93df403580a599f2da99b98f19c9" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            &#128214; Notion 문서 보기
+          </a>
+          <a href="https://github.com/kdhleppa/finalProject" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            &#128187; GitHub 보기
+          </a>
         </div>
       </div>
     </div>
@@ -306,6 +346,11 @@
           <span>AJAX</span>
           <span>Oracle</span>
           <span>CSS</span>
+        </div>
+        <div class="modal-link">
+          <a href="https://www.notion.so/LAGC-Project-1bdd93df40358096abdcf44a5645d706" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            &#128214; Notion 문서 보기
+          </a>
         </div>
       </div>
     </div>
@@ -343,6 +388,82 @@
     </div>
   </div>
 
+  <!-- About Me Modals -->
+  <div class="modal-overlay" id="modal-about-system">
+    <div class="modal">
+      <button class="modal-close" aria-label="닫기">&times;</button>
+      <div class="keyword-icon" style="font-size:2rem;">&#9881;</div>
+      <h3 class="modal-title">시스템 설계</h3>
+      <div class="modal-body">
+        <p class="about-modal-quote">
+          "기계에서 오작동을 막는 인터록 원리를,<br>소프트웨어 아키텍처에 이식합니다."
+        </p>
+        <h4>설계 철학</h4>
+        <ul>
+          <li>메카트로닉스 전공에서 배운 <strong>인터록(Interlock) 설계</strong> &mdash; 특정 조건이 충족되지 않으면 다음 단계로 절대 넘어가지 못하게 하는 물리적 안전 원리를 데이터 처리 로직에 적용합니다.</li>
+          <li>기능의 완성이 아닌, <strong>예외 상황의 완벽한 통제</strong>가 개발의 본질이라 생각합니다.</li>
+          <li>기계의 유기적인 메커니즘을 조망하던 습관을 소프트웨어에 이식하여, 전체 시스템이 유기적으로 맞물려 돌아가게 설계합니다.</li>
+        </ul>
+        <h4>실전 적용</h4>
+        <ul>
+          <li>캠핑장 예약 플랫폼에서 운영 DB와 격리된 <strong>유령 테이블 구조</strong>를 독자적으로 설계</li>
+          <li>모든 데이터가 완벽히 수집된 후에만 트랜잭션을 실행하는 <strong>원자적 이관 로직</strong> 구축</li>
+          <li>수십 차례 강제 종료 시뮬레이션을 거쳐 <strong>단 한 건의 오차도 없는</strong> 시스템 완성</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-about-data">
+    <div class="modal">
+      <button class="modal-close" aria-label="닫기">&times;</button>
+      <div class="keyword-icon" style="font-size:2rem;">&#128274;</div>
+      <h3 class="modal-title">데이터 정합성</h3>
+      <div class="modal-body">
+        <p class="about-modal-quote">
+          "유령 데이터 발생률 0%.<br>단 한 건의 오차도 허용하지 않습니다."
+        </p>
+        <h4>핵심 철학</h4>
+        <ul>
+          <li>예약 시스템은 금전 거래와 직결 &mdash; <strong>단 하나의 데이터 오차</strong>도 고객 신뢰를 잃고 비즈니스 손실로 이어지는 치명적 결함입니다.</li>
+          <li>사용자가 예약 도중 브라우저를 닫거나 네트워크 이탈 시 발생하는 <strong>데이터 누락을 원천 차단</strong>하는 설계를 추구합니다.</li>
+          <li>AI 도구가 제안한 표준 로직의 한계를 직접 발견하고, <strong>로직의 밑바닥부터 직접 설계</strong>하여 해결합니다.</li>
+        </ul>
+        <h4>실전 성과</h4>
+        <ul>
+          <li>실제 운영 DB와 완전히 격리된 임시 저장 공간에서 검증 후 이관하는 <strong>2단계 트랜잭션</strong> 구축</li>
+          <li>삭제 시 데이터 유실 방지를 위한 <strong>논리적 삭제(Soft Delete)</strong> 적용</li>
+          <li>FK/PK 관계에서 발생하는 고아 데이터 문제를 사전에 차단하는 <strong>방어적 DB 설계</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-about-logic">
+    <div class="modal">
+      <button class="modal-close" aria-label="닫기">&times;</button>
+      <div class="keyword-icon" style="font-size:2rem;">&#129504;</div>
+      <h3 class="modal-title">논리적 사고</h3>
+      <div class="modal-body">
+        <p class="about-modal-quote">
+          "코드 한 줄에 항상 분명한 이유가 담겨 있습니다.<br>이유가 분명할 때, 무섭게 몰입하는 사람입니다."
+        </p>
+        <h4>논리 근육 만들기</h4>
+        <ul>
+          <li>2년간의 공백기 동안 매일 고밀도 학습 &mdash; Java 메모리 관리, 객체 지향 원리를 <strong>스스로 납득할 때까지</strong> 파고들었습니다.</li>
+          <li>프로그래머스 코딩 테스트 <strong>주 5회 이상</strong> 풀이, 비전공자임에도 <strong>Lv.4 문제까지</strong> 독력으로 해결합니다.</li>
+          <li>의도적으로 AI 코딩 어시스턴트를 배제하고, 모든 로직을 직접 구현하며 <strong>코드가 실행되는 매 순간의 이유</strong>를 찾는 데 집중했습니다.</li>
+        </ul>
+        <h4>주변의 평가</h4>
+        <ul>
+          <li>"<strong>논리적인 사람</strong>" &mdash; 행동과 코드에 항상 분명한 근거가 있다는 평가</li>
+          <li>"<strong>편협되지 않은 생각</strong>" &mdash; 서로의 이야기를 들어보고 중심을 잡는 소통 스타일</li>
+          <li>문제를 구조화하고, 비즈니스의 복잡한 예외를 <strong>명쾌한 로직으로 풀어내는 해결사</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <!-- Education Section -->
   <section class="section section-alt" id="education">
     <div class="container">
@@ -369,12 +490,54 @@
         <div class="timeline-item animate-on-scroll">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
+            <span class="timeline-date">2026</span>
+            <h3>Jocoding 바이브 코딩 부트캠프</h3>
+            <p>AI Product Builder</p>
+            <p class="timeline-detail">AI 활용 바이브 코딩 기반 프로덕트 개발 과정</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
             <span class="timeline-date">지속 학습 중</span>
             <h3>자기주도 학습</h3>
             <p>인프런 — Java, React, Spring Boot, Docker, AWS</p>
             <p class="timeline-detail">프로그래머스 코딩 테스트 주 5회 이상, Lv.1~3 풀이</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog & GitHub Banner -->
+  <section class="section" id="blog">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Blog & GitHub</h2>
+      <div class="blog-banner-grid">
+        <a href="https://velog.io/@vnm902/posts" target="_blank" rel="noopener noreferrer" class="blog-banner animate-on-scroll">
+          <div class="blog-banner-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3 0C1.338 0 0 1.338 0 3v18c0 1.662 1.338 3 3 3h18c1.662 0 3-1.338 3-3V3c0-1.662-1.338-3-3-3H3zm6.883 6.25c.63 0 1.005.3 1.125.9l1.463 8.303c.465-.615.846-1.133 1.146-1.553.465-.66.893-1.418 1.283-2.273.405-.855.608-1.62.608-2.295 0-.405-.113-.727-.338-.968-.21-.255-.608-.577-1.193-.967.6-.36 1.05-.735 1.35-1.125.315-.405.473-.885.473-1.44 0-.705-.248-1.29-.743-1.755-.48-.48-1.118-.72-1.913-.72H7.5v.001l.375 1.575c.408.06.674.19.8.39.124.185.187.465.187.84v9.39c0 .21-.04.405-.12.585a1.507 1.507 0 0 1-.27.42 2.11 2.11 0 0 0-.135.15l.3 1.26h4.05l-.15-.63-.318-1.38c-.27.015-.488-.06-.652-.225a.78.78 0 0 1-.248-.585V6.25h.464z"/>
+            </svg>
+          </div>
+          <div class="blog-banner-text">
+            <h3>Velog</h3>
+            <p>개발 학습 기록과 문제 풀이를 정리합니다</p>
+          </div>
+          <span class="blog-banner-arrow">&rarr;</span>
+        </a>
+        <a href="https://github.com/ahnjaeyoun?tab=repositories" target="_blank" rel="noopener noreferrer" class="blog-banner animate-on-scroll">
+          <div class="blog-banner-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </div>
+          <div class="blog-banner-text">
+            <h3>GitHub</h3>
+            <p>프로젝트 소스 코드와 레포지토리를 확인하세요</p>
+          </div>
+          <span class="blog-banner-arrow">&rarr;</span>
+        </a>
       </div>
     </div>
   </section>
@@ -387,22 +550,21 @@
         함께 일할 기회를 기다리고 있습니다.<br>
         언제든 편하게 연락 주세요.
       </p>
-      <div class="contact-grid animate-on-scroll">
-        <a href="mailto:vnm1994wodbs@gmail.com" class="contact-card">
-          <div class="contact-icon">&#9993;</div>
-          <h3>Email</h3>
-          <p>vnm1994wodbs@gmail.com</p>
-        </a>
-        <a href="https://github.com/vnm1994wodbs" target="_blank" rel="noopener noreferrer" class="contact-card">
-          <div class="contact-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-            </svg>
-          </div>
-          <h3>GitHub</h3>
-          <p>github.com/vnm1994wodbs</p>
-        </a>
-      </div>
+      <form class="contact-form animate-on-scroll" action="https://formspree.io/f/xlgwdjbg" method="POST">
+        <div class="form-group">
+          <label for="form-name">이름</label>
+          <input type="text" id="form-name" name="name" placeholder="이름을 입력하세요" required>
+        </div>
+        <div class="form-group">
+          <label for="form-email">이메일</label>
+          <input type="email" id="form-email" name="email" placeholder="이메일을 입력하세요" required>
+        </div>
+        <div class="form-group">
+          <label for="form-message">메시지</label>
+          <textarea id="form-message" name="message" rows="5" placeholder="메시지를 입력하세요" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary contact-submit-btn">메일 보내기</button>
+      </form>
     </div>
   </section>
 

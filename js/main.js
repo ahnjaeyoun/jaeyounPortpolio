@@ -189,12 +189,24 @@ function initMobileMenu() {
    =========================== */
 function initModals() {
   const detailBtns = document.querySelectorAll('.project-detail-btn');
+  const keywordCards = document.querySelectorAll('.keyword-card--clickable');
   const overlays = document.querySelectorAll('.modal-overlay');
   const closeBtns = document.querySelectorAll('.modal-close');
 
   detailBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
       const modalId = btn.getAttribute('data-modal');
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  keywordCards.forEach((card) => {
+    card.addEventListener('click', () => {
+      const modalId = card.getAttribute('data-modal');
       const modal = document.getElementById(modalId);
       if (modal) {
         modal.classList.add('active');
